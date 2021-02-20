@@ -17,7 +17,7 @@ export default function UserDetails({
   return (
     <div className="form-review">
       <h3>Delivery address</h3>
-      <h4 className="form-review-element">
+      <h4 className="form-review-element name">
         {firstName} {lastName}
       </h4>
       <span className="form-review-element">
