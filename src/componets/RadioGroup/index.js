@@ -32,9 +32,9 @@ RadioGroup.propTypes = {
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string,
-      value: PropTypes.string,
-      label: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      value: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
     })
   ),
 };
