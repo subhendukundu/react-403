@@ -1,5 +1,4 @@
 .app-wrapper {
-  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   padding: 150px 0;
@@ -7,9 +6,16 @@
 }
 
 .form-container,
-.form-review {
+.user-details {
   width: 30%;
+}
+
+.form-container {
   padding: 70px;
+}
+
+.form-container,
+.form-review {
   border-radius: 10px;
 }
 

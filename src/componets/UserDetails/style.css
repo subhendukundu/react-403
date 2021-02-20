@@ -1,0 +1,9 @@
+.form-review {
+  padding: 20px;
+  background: #fff;
+}
+
+.form-review-element {
+    display: flex;
+    margin-bottom: 20px;
+}

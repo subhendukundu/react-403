@@ -3,12 +3,13 @@
     flex-direction: column;
     margin-bottom: 30px;
     width: 100%;
+    transition: all 0.3s ease-out;
 }
 
 .input-lable {
     padding-bottom: 10px;
     font-size: 16px;
-    color: #000;
+    color: rgb(99, 97, 97);
 }
 
 .input {

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 import "./style.css";
@@ -11,17 +12,29 @@ export default function RadioGroup({ options, onChange }) {
   return (
     <div className="radio-group">
       {options.map((item) => (
-        <div key={item.value}>
+        <div key={item.value} className="radio-input">
           <input
             type="radio"
             name={item.name}
             value={item.value}
+            id={item.value}
             onChange={handleOnChange}
             defaultChecked={item.defaultChecked}
           />
-          <label>{item.label}</label>
+          <label htmlFor={item.value}>{item.label}</label>
         </div>
       ))}
     </div>
   );
 }
+
+RadioGroup.propTypes = {
+  onChange: PropTypes.func,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      value: PropTypes.string,
+      label: PropTypes.string,
+    })
+  ),
+};
